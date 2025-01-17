@@ -21,6 +21,19 @@
             text-align: center;
             padding: 1rem 0;
         }
+
+        .button-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem; /* Space between button sections */
+        }
+
+        .button-image img {
+            width: 100px; /* Set a width for the images */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 0.5rem; /* Space between button and image */
+        }
     </style>
 </head>
 <body>
@@ -56,10 +69,26 @@
         <h2>Secure Your Smart Home</h2>
         <p style="font-size: smaller;">Want better cyber security in your smart home? This is the only site you'll ever need.</p>
         <h3>Buttons</h3>
-        <button class="btn btn-primary">Why secure your smart home</button>
-        <button class="btn btn-secondary">Passwords and smart homes</button>
-        <button class="btn btn-success">Your Home Network</button>
-        <button class="btn btn-danger">What can happen if you have poor security</button>
+
+        <div class="button-image">
+            <button class="btn btn-primary">Why secure your smart home</button>
+            <img src="path/to/image1.jpg" alt="Why secure your smart home">
+        </div>
+
+        <div class="button-image">
+            <button class="btn btn-secondary">Passwords and smart homes</button>
+            <img src="path/to/image2.jpg" alt="Passwords and smart homes">
+        </div>
+
+        <div class="button-image">
+            <button class="btn btn-success">Your Home Network</button>
+            <img src="path/to/image3.jpg" alt="Your Home Network">
+        </div>
+
+        <div class="button-image">
+            <button class="btn btn-danger">What can happen if you have poor security</button>
+            <img src="path/to/image4.jpg" alt="Poor security consequences">
+        </div>
     
         <h3>More Content</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non velit nec leo tincidunt efficitur. Quisque ut felis eros.</p>  
