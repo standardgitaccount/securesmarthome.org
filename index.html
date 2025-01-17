@@ -21,6 +21,31 @@
             text-align: center;
             padding: 1rem 0;
         }
+
+        .button-image {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            width: 120%; /* Enlarge button by 20% */
+            height: auto;
+            margin-bottom: 20px; /* Add some space below the button */
+        }
+
+        .button-image img {
+            width: 100%; /* Ensure the image fills the button */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .button-image .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2rem; /* Adjust font size as needed */
+            text-align: center;
+            text-shadow: 1px 1px 2px black; /* Optional: Add text shadow for better visibility */
+        }
     </style>
 </head>
 <body>
@@ -56,7 +81,13 @@
         <h2>Secure Your Smart Home</h2>
         <p style="font-size: smaller;">Want better cyber security in your smart home? This is the only site you'll ever need.</p>
         <h3>Buttons</h3>
-        <button class="btn btn-primary">Primary Button</button>
+        
+        <!-- Button with Image -->
+        <div class="button-image">
+            <img src="images/attention-sign-or-warning-caution-exclamation-sign-danger-yellow-triangle-stock-illustration-free-vector-1130340372.jpg" alt="Secure Smart Home" /> <!-- Replace with actual image path -->
+            <div class="overlay-text">Why secure my smart home?</div>
+        </div>
+
         <button class="btn btn-secondary">Secondary Button</button>
         <button class="btn btn-success">Success Button</button>
         <button class="btn btn-danger">Danger Button</button>
@@ -73,7 +104,4 @@
 
     <!-- Include Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Include Bootstrap JS -->
-
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js
