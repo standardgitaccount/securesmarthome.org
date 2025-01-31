@@ -22,18 +22,6 @@
             padding: 1rem 0;
         }
 
-        .button-image {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 2rem; /* Space between button sections */
-        }
-
-        .button-image img {
-            width: 250px; /* Set a width for the images (enlarged by another 50%) */
-            height: auto; /* Maintain aspect ratio */
-            margin-top: 0.5rem; /* Space between button and image */
-        }
     </style>
 </head>
 <body>
@@ -78,27 +66,64 @@
         <h2>Secure Your Smart Home</h2>
         <p style="font-size: medium;">Want better cyber security in your smart home? This is the only site you'll ever need.</p>
         <h3 style="font-size: medium;">Use the buttons below or navigation bar to get started!</h3>
-
-        <div class="button-image">
-            <a href="secure.html" class="btn btn-primary">Why secure your smart home</a>
-            <img src="/Images/closeup-locked.jpg" >
         </div>
 
-        <div class="button-image">
-            <a href="passwords.html" class="btn btn-secondary">Passwords and smart homes</a>
-            <img src="/Images/339326323-844052958.jpg" >
+             <!-- Content Row -->
+<div class="row gx-4 gx-lg-5">
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <a href="secure.html">
+            <img src="/Images/closeup-locked.jpg" class="card-img-top" alt="Privacy"> </a>
+            <div class="card-body">
+                <h2 class="card-title">Why you should secure your smart home</h2>
+                <p class="card-text">Discussing the reasons why you need a secure smart home.</p>
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primary btn-sm" href="secure.html">More Info</a>
+            </div>
         </div>
-
-        <div class="button-image">
-            <a href="network.html" class="btn btn-success">Your Home Network</a>
-            <img src="/Images/computer-network-18129657-3013004422.jpg" >
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <a href="passwords.html">
+            <img src="/Images/339326323-844052958.jpg" class="card-img-top" alt="Security"> </a>
+            <div class="card-body">
+                <h2 class="card-title">Passwords and smart homes</h2>
+                <p class="card-text">What makes a good password and why your smart home needs one.</p>
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primary btn-sm" href="passwords.html">More Info</a>
+            </div>
         </div>
-
-        <div class="button-image">
-            <a href="security.html" class="btn btn-danger">What can happen if you have poor security</a>
-            <img src="/Images/attention-sign-or-warning-caution-exclamation-sign-danger-yellow-triangle-stock-illustration-free-vector-1130340372.jpg" >
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <a href="network.html">
+            <img src="/Images/computer-network-18129657-3013004422.jpg" class="card-img-top" alt="Training"></a>
+            <div class="card-body">
+                <h2 class="card-title">Your Home Network</h2>
+                <p class="card-text">Why your home network can impact smart home security</p>
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primary btn-sm" href="network.html">More Info</a>
+            </div>
         </div>
-    </main>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <a href="security.html">
+            <img src="Images/attention-sign-or-warning-caution-exclamation-sign-danger-yellow-triangle-stock-illustration-free-vector-1130340372.jpg" class="card-img-top" alt="Policies and Procedures"></a>
+            <div class="card-body">
+                <h2 class="card-title">What happens if you have poor security?</h2>
+                <p class="card-text"> Consequences of poor smart home security, inclduing a simulation</p>
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primary btn-sm" href="security.html">More Info</a>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
 
     <!-- Footer -->
     <footer class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
