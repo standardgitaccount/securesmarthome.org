@@ -16,10 +16,13 @@
         }
 
         .footer {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
+            width: 100%; /* Ensures the footer takes the full width */
+            background-color: #343a40; /* Background color for the footer */
+            color: white; /* Text color for the footer */
+            text-align: center; /* Center text in the footer */
+            padding: 1rem 0; /* Padding for the footer */
+            position: relative; /* Allows it to be positioned correctly */
+            bottom: 0; /* Sticks to the bottom of the page */
         }
 
     </style>
@@ -149,14 +152,14 @@
                     </div>
                 </div>
             </div>     
-    <main>
+    </main>
 
         
         <!-- Additional gap before footer -->
         <div class="gap"></div>
 
         <!-- Footer -->
-        <footer class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <footer class="footer">
             <p class="text-center text-white">&copy; 2025 SecureSmartHome. All rights reserved.</p>
             <p class="text-center text-white">This is a project by third year Computer Security student 30060283 at the University of South Wales.</p>
         </footer>
@@ -165,4 +168,4 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Include Bootstrap JS -->
     </body>
-    </html>
+</html>
