@@ -63,7 +63,7 @@
     
     <!-- Main body of text wrapped in div class lg7 -->
     <div class="lg7">
-        <h3 class="text-left" style="text-decoration: underline;">What is meant by your home network?</h3>
+        <h3 class="text-left" style="text-decoration: underline bold;">What is meant by your home network?</h3>
         <div class="gap"></div>
         <p class="text-left custom-paragraph">In terms of your smart home, the network is simply describing all your devices connected together and communicating with each other. </p>
         <div class="gap"></div>
@@ -71,7 +71,7 @@
         <div class="gap"></div>
         <p class="text-left custom-paragraph">Some people may refer to their home network as their “wifi”. However, as wifi is the way devices (including smart home devices) connects to your network wirelessly, their “wifi” will be referred to as the home network in this guide, to avoid any confusion. </p>
         <div class="gap"></div>
-        <h3 class="text-left" style="text-decoration: underline;">Now that is cleared up..how does my home network affect my smart homes security?</h3>
+        <h3 class="text-left" style="text-decoration: underline bold;">Now that is cleared up..how does my home network affect my smart homes security?</h3>
         <div class="gap"></div>
         <p class="text-left custom-paragraph">Simply put, a poorly set up smart home network can allow hackers easy access to your smart home devices. A weak password or the default password on the back of your router/smart home device may allow hackers to easily join your home network. </p>
         <div class="gap"></div>
@@ -87,9 +87,11 @@
         <div class="gap"></div>
         <p class="text-left custom-paragraph">There has also been instances where some smart home devices have been shipped with insecure network services (basically sets of rules that tell how the device how to communicate with other devices on your network). If settings on these devices are not changed to disable these insecure network services, these too could be a way a hacker could exploit your smart home. </p>
         <div class="gap"></div>
-        <h3 class="text-left" style="text-decoration: underline;">So, what can i do so that my network enables a secure smart home?</h3>
+        <h3 class="text-left" style="text-decoration: underline bold;">So, what can i do so that my network enables a secure smart home?</h3>
         <div class="gap"></div>
         <p class="text-left custom-paragraph">As smart home devices focus so little on security and privacy, some the actions suggested in this guide may seem a little drastic. However, the actions are necessary to maintain security and privacy in your smart home. </p>
+        <div class="gap"></div>
+        <h5 class="text-left" style="text-decoration: underline;">What are routers? And what should I do about my one?</h5>
         <div class="gap"></div>
         <p class="text-left custom-paragraph">Starting off, any default wifi or router admin passwords MUST be changed to a strong password. If the password is hardcoded into the device, the best advice would be to stop using it in your network, and replace it with a device that does not use hardcoded passwords at all. </p>
         <div class="gap"></div>
@@ -99,9 +101,13 @@
         <div class="gap"></div>
         <p class="text-left custom-paragraph">However, this solution can be expensive. So, this guide will cover solutions that can be applied across both instances. </p>
         <div class="gap"></div>
+        <h5 class="text-left" style="text-decoration: underline;">Configuring your firewall</h5>
+        <div class="gap"></div>
         <p class="text-left custom-paragraph">Things that should always be configured correctly include the firewall. As the name suggests, this acts almost like a wall around your network, and only allows certain traffic (information from the internet/another device, approved by the firewall) to enter the network. This will differ slightly depending on what you use the internet for, but to ensure maximum security for your smart home, only traffic required to make the smart home device work should be allowed through the firewall. </p>
         <div class="gap"></div>
         <p class="text-left custom-paragraph">If you are unsure on how to set up/configure a firewall, look up the make and model name of your router, and there will almost certainly be YouTube videos/online guides which will walk you through the process. For most routers, it is a case of logging into the admin page and using the correct menus.</p>
+        <div class="gap"></div>
+        <h5 class="text-left" style="text-decoration: underline;">Adding a VPN to your router</h5>
         <div class="gap"></div>
         <p class="text-left custom-paragraph">Another good practice to ensure your smart home is secure is to add a VPN (Virtual Private Network) to your router. Whilst some may know that you can add a VPN to a computer, phone or tablet, people may not be aware that you can also add VPNs to your router.</p>
         <div class="gap"></div>
@@ -111,7 +117,19 @@
         <div class="gap"></div>
         <p class="text-left custom-paragraph">The process of adding a VPN to your router will differ depending on the make/model, but there should be YouTube videos/online tutorials that walk you through the process. For most routers, it is a case of logging into the admin page, and using the correct menus. </p>
         <div class="gap"></div>
-        <p class="text-left custom-paragraph">Talk about as little internet access as possible</p>
+        <h5 class="text-left" style="text-decoration: underline;">Restricting internet access to your smart home devices, and why you should do it. </h5>
+        <div class="gap"></div>
+        <p class="text-left custom-paragraph">What may be considered drastic to some, is restricting internet access as much as possible. The less internet acces smart home devices have, the less data is transmitted, limiting risk of your smart home being hacked. As well as this, limiting internet access will also limit the chance of your data being sold to third parties, which is sadly common practice amongst manufacturers now. </p>
+        <div class="gap"></div>
+        <p class="text-left custom-paragraph">If you do not wish to purchase multiple routers,  you can use what are known as VLANs, Virtual Local Area Networks. These work in a (sort of) similar way to VPNs, they provide a secluded space on your home network where you can set your own rules and choose what devices go on it . You can set traffic (the data send to and from devices on your network) to only flow only one way, disable internet access for some devices or restrict content on devices. </p>
+        <div class="gap"></div>
+        <p class="text-left custom-paragraph">The smart thing to do would be to put all your smart home devices on two VLANs, one which disables internet access, and one which has internet access but runs through the VPN discussed earlier. Smart home devices that do not require internet access (such as smart light switches and cameras) can use this seperate VLAN so there is no way a hacker can gain access to it. </p>
+        <div class="gap"></div>
+        <p class="text-left custom-paragraph">The other smart home devices that do need an internet connection (such as Alexa or Google Nest speakers) can use the other VLAN that does have internet access. This means that these devices can still work properly, but are effectively seperated from all the other devices on your home network. So if the internet-using smart home devices are found to the vulnerable, not all of your network will be at risk. </p>
+        <div class="gap"></div>
+        <p class="text-left custom-paragraph">Like firewalls and VPNs, enabling and setting up VLANs will vary from make/model of router, however, for most models, it will be a case of logging into the routers admin page and using the correct menus. </p>
+        <div class="gap"></div>
+        <h5 class="text-left" style="text-decoration: underline;">Close unecessary ports </h5>
         <div class="gap"></div>
         <p class="text-left custom-paragraph">Talk about closing unecessary ports.</p>
         <div class="gap"></div>
